@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.top-container{
+    background-color: #23283B;
+    height: 60px;
+}
+.top-container .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.top-container-text{
+    color: #8A949D;
+    font-size: 13px;
+}
+.navbar-container,.dropdown,.dropdown li a{
+    color: white;
+  font-family: "Oswald", sans-serif;
+    background-color: rgb(23,26,39);
+    
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+button:focus:not(:focus-visible) {
+     outline: none; 
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+     outline: none; 
+     box-shadow:none !important ;
+}
+.navbar-nav a{
+    color: white;
+}
+
+.navbar-nav a:hover,.navbar-nav a:active,.navbar-nav a:focus{
+    color: white !important;
+}
+.social-icons{
+    justify-content: end;
+    align-items: end ;
+    gap: 10px;
+}
+/* hero page */
+.hero-page{
+    background: url("https://img.freepik.com/free-photo/muscular-car-service-worker-repairing-vehicle_146671-19605.jpg"), rgb(38, 44, 61);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: overlay;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+}
+.hero-page .container{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-0%,-0%);
+}
+.yellow-text{
+    color: #fedb1a;
+}
+.hero-page h1{
+    color: white;
+    font-size: 60px;
+}
+.hero-page p{
+    color: rgb(162,162,163);
+}
+.yellow-btn{
+    background-color: #fedb1a;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-color: transparent;
+}
+.hero-page a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.read-more{
+     color: rgb(162,162,163);
+}
