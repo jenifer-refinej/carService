@@ -1,26 +1,46 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-.top-container{
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: content-box;
+
+}
+
+.top-container {
     background-color: #23283B;
     height: 60px;
 }
-.top-container .container{
+
+.top-container .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
 }
-.top-container-text{
+
+.top-container-text {
     color: #8A949D;
     font-size: 13px;
 }
-.navbar-container,.dropdown,.dropdown li a{
+
+.navbar-container,
+.dropdown,
+.dropdown li a {
     color: white;
-  font-family: "Oswald", sans-serif;
-    background-color: rgb(23,26,39);
-    
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(23, 26, 39);
+
 }
+
 .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -31,64 +51,776 @@
     background-position: center;
     background-size: 100%;
 }
+
 button:focus:not(:focus-visible) {
-     outline: none; 
+    outline: none;
 }
 
 .navbar-toggler:focus {
     text-decoration: none;
-     outline: none; 
-     box-shadow:none !important ;
+    outline: none;
+    box-shadow: none !important;
 }
-.navbar-nav a{
+
+.navbar-nav a {
     color: white;
 }
 
-.navbar-nav a:hover,.navbar-nav a:active,.navbar-nav a:focus{
+.navbar-nav a:hover,
+.navbar-nav a:active,
+.navbar-nav a:focus {
     color: white !important;
 }
-.social-icons{
+
+.social-icons {
     justify-content: end;
-    align-items: end ;
+    align-items: end;
     gap: 10px;
 }
+
+.fa-brands:hover {
+    cursor: pointer;
+}
+
 /* hero page */
-.hero-page{
-    background: url("https://img.freepik.com/free-photo/muscular-car-service-worker-repairing-vehicle_146671-19605.jpg"), rgb(38, 44, 61);
+.hero-page {
+    background: url("https://eskute.co.uk/cdn/shop/articles/electric-bike-repair.jpg?v=1672816351"), rgb(38, 44, 61);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 105vh;
     background-blend-mode: overlay;
     padding: 10px;
     font-family: "Oswald", sans-serif;
 }
-.hero-page .container{
+
+.hero-page .hero-container {
     position: absolute;
     top: 35%;
     left: 10%;
-    transform: translate(-0%,-0%);
+    transform: translate(-0%, -0%);
 }
-.yellow-text{
+
+.yellow-text {
     color: #fedb1a;
+    font-weight:500;
 }
-.hero-page h1{
+
+.hero-page h1 {
     color: white;
     font-size: 60px;
 }
-.hero-page p{
-    color: rgb(162,162,163);
+
+.hero-page p {
+    color: rgb(162, 162, 163);
 }
-.yellow-btn{
+
+.yellow-btn {
     background-color: #fedb1a;
     color: black;
     padding: 5px 20px;
     font-weight: 500;
     border-color: transparent;
 }
-.hero-page a{
+
+.yellow-btn-two {
+    border-color: #fedb1a;
+    padding: 5px 20px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+}
+
+.hero-page a {
     text-decoration: none;
     font-size: 18px;
 }
-.read-more{
-     color: rgb(162,162,163);
+
+.read-more {
+    color: rgb(162, 162, 163);
+}
+
+.heropage-animation {
+    animation: heropage-animation 2s ease;
+}
+
+@keyframes heropage-animation {
+    from {
+        transform: translateX(-10%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* service content style goes here */
+.service-container-main {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(to right, #101018 10%, #020204 90%);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: white;
+    background-blend-mode: overlay;
+    padding: 10px;
+    padding-bottom: 10%;
+}
+
+.service-content-holder {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.service-content {
+    border-color: transparent;
+    padding: 20px;
+    background-color: #23283B;
+    color: white;
+    width: 25%;
+}
+
+.box-one {
+    animation: twoservice-container-one 2s ease;
+}
+
+.box-two {
+    animation: twoservice-container-two 2s ease;
+
+}
+
+@keyframes twoservice-container-one {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes twoservice-container-two {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.service-content-yellow {
+    background-color: #fedb1a;
+    color: black;
+    width: 25%;
+    border-color: transparent;
+    padding: 30px;
+    margin-top: -5%;
+}
+
+.allh4yellow-text {
+    color: #fedb1a;
+    text-transform: uppercase;
+
+}
+
+.whoweare {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.client--stast {
+    justify-content: space-between;
+}
+
+.progress {
+    height: 5px !important;
+}
+
+.progress-bar-animation {
+    width: 0;
+    background-color: #febd1a;
+    animation: progress-bar-animation 3s ease;
+}
+
+@keyframes progress-bar-animation {
+    0% {
+        width: 0%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 90%;
+        /* Final width value */
+    }
+}
+
+.best--service {
+    gap: 20%;
+}
+
+.best--service i {
+    background-color: #23283b;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.best--service--tiny {
+    gap: 20px;
+}
+
+/* form style */
+.whoweare .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form--container {
+    width: 50%;
+    margin-left: -10%;
+    background-color: #23283b;
+    padding: 10px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 0px !important;
+}
+
+form button {
+    width: 100%;
+}
+
+/* our services */
+.our-services-container {
+    background: #23283b;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    padding-bottom: 5%;
+}
+
+.our-services {
+    color: white;
+}
+
+.our-services h4,
+.our-services h2,
+.allh4yellow-text p {
+    margin-left: 3rem !important;
+}
+
+.grey-text {
+    color: #7d8893;
+}
+
+.width-50 {
+    width: 50%;
+
+}
+
+.card-body {
+    background-color: #101018;
+    color: white !important;
+
+}
+
+.read-more-anchor {
+    color: rgb(206, 205, 205);
+}
+
+.our-services-card {
+    margin-top: 10%;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+.card {
+    --bs-card-border-color: none !important;
+    box-shadow: 7px 7px 7px #090d11;
+    position: relative;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.09);
+    border-color: transparent;
+}
+
+.yellow-card {
+    background-color: #fedb1a;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    transform: translate(5%, 5%);
+    text-align: center;
+    font-size: 25px;
+}
+
+/* emeregency section */
+.emeregency-service {
+    background: url("https://img.freepik.com/free-photo/muscular-car-service-worker-repairing-vehicle_146671-19605.jpg"), #2b2a2a;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    background-blend-mode: overlay;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.emergency-contact {
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.project-completed {
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.project-done {
+    background-color: rgba(128, 128, 128, 0.553);
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.project-done p {
+    font-size: 14px;
+}
+
+/* why choose us */
+.whychooseus {
+    font-family: "Oswald", sans-serif;
+    background: #101018;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.chooseusimg {
+    max-width: 100%;
+}
+
+.whoweare p {
+    font-size: 14px;
+}
+
+.character-one {
+    gap: 5%;
+}
+
+.charcter-content p {
+    font-size: 13px;
+}
+
+.charcter-icon {
+    background-color: #23283B;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* testimonail container */
+.testimony {
+    background: #101018;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+   height: 750px;
+    flex-direction: column;
+}
+
+.container-testimonal {
+    cursor: pointer;
+
+    width: 95%;
+    height: 350px;
+
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: auto;
+    max-width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: var(--bs-gutter-y);
+}
+
+.card-one .row {
+    flex-wrap: wrap !important;  
+}
+
+.testimony-content {
+    background-color: #23283B;
+    
+    height: auto;
+    padding: 5% 3% !important;
+}
+
+.testimony-image {
+    background-color: #23283B;
+}
+
+.testimony-image img {
+    max-width: 100%;
+    height: 350px;
+}
+
+.customer img {
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.customer p {
+    font-size: 12px;
+    color: #7d8893;
+}
+.arrow-icon{
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+gap: 30px;
+}
+.fa-circle-arrow-left {
+   
+    cursor: pointer;
+    font-size: 30px;
+    
+    color: #fedb1a;
+   
+}
+
+.fa-circle-arrow-right {
+    font-size: 30px;
+    cursor: pointer;
+
+    color: #fedb1a;
+   
+}
+.card-two,.card-three,.card-four {
+    display: none;
+}
+/* faq style */
+.faq{
+    background:url("./map.png"),#101018;
+    font-family: "Oswald", sans-serif;
+    background-size: cover;
+    background-position: center;
+  align-items: center;
+  justify-content: center;
+    background-blend-mode: overlay;
+    height: 95vh;
+
+}
+.accordion-button{
+    background-color: #181824 !important;
+    color: white !important;
+    border-radius: 10px;
+}
+.accordion-item{
+    background-color: #101018 !important;
+    color: white !important;
+}
+.faq .container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.offer{
+    background-color:#454650;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer-box{
+    border: 1px solid rgb(190, 188, 188);
+    padding:2% 5%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+ 
+}
+/* contact-form */
+.contact-form{
+    background-color: #101018f2;
+    padding:5%;
+    font-family: "Oswald", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.form-letstalk{
+    width: 100%;
+    background-color: #23283B;
+    padding: 5%;
+    padding-bottom:8%;
+}
+.form-letstalk label{
+    color: white;
+    font-weight: bold;
+}
+.form-letstalk .form-control{
+    padding: 15px;
+}
+.name-element{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 10px;
+}
+iframe{
+width: 400px;
+height: 350px;
+    margin-top: 15px;
+}
+/* blog-container */
+.blog-container{
+    background-color: #161723;
+    font-family: "Oswald", sans-serif;
+    height: auto;
+    padding: 2rem;
+}
+.blog-holder{
+    display: flex;
+align-items: center;
+/* justify-content:center; */
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.blog-card{
+    background-color: #101018;
+    padding:5% 3%;
+    height: auto;
+    text-align: center;
+    width: 25%;
+}
+.blog-card h2,.blog-card-one h2{
+    font-size:35px;
+    color: white;
+}
+.blog-card-one{
+    padding:5%;
+    height: auto;
+    width: 35%;
+    cursor: pointer;
+    color:white;
+    display: flex;
+    flex-direction: column;
+  
+}
+.blog-card-one:hover{
+    transform: scale(1.05);
+}
+.posted-date {
+    justify-content: space-around;
+}
+.blog-card-one img{
+    height: 220px;
+}
+.footer-container{
+    background-color: #23283b;
+    font-family: "Oswald", sans-serif;
+
+}
+.services-footer{
+    list-style: none;
+    color: #7d8893;
+    padding-left: 0;
+
+
+}
+.copyright{
+    background-color: #020204;
+    color: #7d8893;
+    padding:10px;
+    font-family: "Oswald", sans-serif;
+
+}
+.copyright .container{
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:900px) {
+
+    .service-content,
+    .service-content-yellow {
+        width: auto;
+    }
+
+    .hero-page h1 {
+        font-size: 25px;
+    }
+
+    .top-container {
+        font-size: 6px;
+    }
+
+    .whoweare {
+        margin-left: 10px !important;
+    }
+
+    .width20 {
+        width: 80%;
+        margin-left: 5px;
+    }
+    .testimony{
+        height: 1100px;
+       }
+      
+}
+@media (min-width:375px) and (max-width:1000px) {
+    .faq{
+        height: auto;
+       }
+}
+@media (min-width:320px) and (max-width:500px) {
+    .form--container {
+        width: 100%;
+    }
+
+    .our-services-header {
+        flex-wrap: wrap;
+    }
+
+    .our-services-card {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .our-services h4,
+    .our-services h2,
+    .allh4yellow-text {
+        margin-left: 0 !important;
+    }
+
+    .width-50 {
+        width: auto;
+    }
+
+    .our-services-container {
+        padding: 2rem !important;
+    }
+  .offer-box{
+  
+    width: auto;
+   
+}
+.blog-card{
+    width: 100%;
+}
+.blog-card-one{
+    width: 100%;
+}
+iframe{
+    width:300px
+}
+
+}
+
+@media (min-width:990px) {
+    .our-services {
+        margin: 3rem;
+    }
+
+    .whychooseus {
+        padding: 3rem;
+    }
+
+    .width-50 {
+        padding-left: 2rem;
+        margin-left: 1%;
+    }
+
+    .our-services {
+        padding: 3rem;
+    }
+    ._free{
+        margin-left: 2rem;
+    }
+
 }

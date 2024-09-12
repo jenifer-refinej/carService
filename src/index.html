@@ -2,96 +2,766 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarService.com</title>
-    <link rel="stylesheet" href="input.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="car service web app">
+  <title>CarService.com</title>
+  <link rel="stylesheet" href="input.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid top-container">
-            <div class="container">
-                <div class="">
-                    <i class="fa-solid fa-location-dot " style="color: #febd1a;"></i>
-                    <span class="top-container-text me-3">9,North Califorina,USA</span>
-                    <i class="fa-solid fa-location-dot" style="color: #febd1a;"></i>
-                    <span class="top-container-text">9,North Califorina,USA</span>
-                </div>
-                <div class="">
-                    <i class="fa-solid fa-percent" style="color: #febd1a;"></i>
-                    <span class="top-container-text me-3">Discount 25% for every services </span>
-               
-                    <i class="fa-solid fa-clock-rotate-left" style="color: #fedb1a;"></i>
-                    <span class="top-container-text">8.00am - 19.00pm</span>
-                </div>
-            </div>
+  <header>
+    <div class="container-fluid top-container">
+      <div class="container">
+        <div class="">
+          <i class="fa-solid fa-location-dot " style="color: #febd1a;"></i>
+          <span class="top-container-text me-3">9,North Califorina,USA</span>
+          <i class="fa-solid fa-location-dot" style="color: #febd1a;"></i>
+          <span class="top-container-text">9,North Califorina,USA</span>
         </div>
-    <div class="container-fluid navbar-container">
-        <div class="container">
-            <nav class="navbar navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand text-white fw-bold fs-3" href="#">
-                    <i class="fa-solid fa-taxi d-inline-block align-text-top mt-2" style="color: #fedb1a;" width="30" height="24" ></i>
-                    TRAVDOO
-                  </a>
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse ms-5" id="navbarNav">
-                    <ul class="navbar-nav ">
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">HOMEPAGE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         SERVICES
-                        </a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PAGES
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" >CONTACT US</a>
-                      </li>
-                    </ul>
-                </div>
-                <div class="d-flex social-icons ms-5">
-                    <i class="fa-brands fa-square-facebook fs-4 " style="color: #fedb1a;"></i>
-                    <i class="fa-brands fa-square-x-twitter fs-4" style="color: #fedb1a;"></i>
-                    <i class="fa-brands fa-square-youtube fs-4 " style="color: #fedb1a;"></i>
-                </div>
-        
-    
-              </nav>
+        <div class="">
+          <i class="fa-solid fa-percent" style="color: #febd1a;"></i>
+          <span class="top-container-text me-3">Discount 25% for every services </span>
+
+          <i class="fa-solid fa-clock-rotate-left" style="color: #fedb1a;"></i>
+          <span class="top-container-text">8.00am - 19.00pm</span>
         </div>
+      </div>
     </div>
-    </header>
+    <div class="container-fluid navbar-container">
+      <div class="container">
+        <nav class="navbar navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold fs-3" href="#">
+              <i class="fa-solid fa-taxi d-inline-block align-text-top mt-2" style="color: #fedb1a;" width="30"
+                height="24"></i>
+              FixMyRide
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">HOMEPAGE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    SERVICES
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    PAGES
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex social-icons ms-5">
+              <i class="fa-brands fa-square-facebook fs-4 " style="color: #fedb1a;"></i>
+              <i class="fa-brands fa-square-x-twitter fs-4" style="color: #fedb1a;"></i>
+              <i class="fa-brands fa-square-youtube fs-4 " style="color: #fedb1a;"></i>
+            </div>
+
+
+        </nav>
+      </div>
+    </div>
+  </header>
   <main>
     <div class="container-fluid hero-page">
-        <div class="container">
-   <h4 class="yellow-text">DRIVE WITH CONFIDENCE</h4>
-   <h1 class="fw-bold">Premium Car <span class="yellow-text">Detailing <br></span> & Repair <span class="yellow-text">Solutions</span></h1>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Repellat molestias  laboriosam consequatur voluptas rerum accusantium eos dolores suscipit odit </p>
-   <button class="yellow-btn mt-4">MAKE APPOINMENT</button>
-   <a href="#" class="read-more ms-5">READ MORE <i class="fa-solid fa-arrow-right" style="color: #a2a2a3;"></i></a>
-        </div>
-    </div>
-  </main>
+      <div class="hero-container">
+        <h4 class="yellow-text allh4yellow-text">DRIVE WITH CONFIDENCE</h4>
+        <h1 class="fw-bold">Reliable <span class="yellow-text"> Bike Repair <br></span>& <span
+            class="yellow-text">Maintenance</span> at Your Fingertips</h1>
+        <p>Expert Mechanics, Quick Service, Anytime, Anywhere </p>
+        <button class="yellow-btn mt-4">MAKE APPOINTMENT</button>
+        <a href="#" class="read-more-anchor mt-4 ms-2">READ MORE <i class="fa-solid fa-arrow-right"
+            style="color: rgb(206, 205, 205);"></i></a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/1e0f6f9635.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+      </div>
+    </div>
+    <!-- service content box goes here -->
+
+    <div class="service-container-main p-5">
+      <div class="service-content-holder pt-2 d-flex">
+        <div class="service-content  service" id="box-one">
+          <h4>On-Demand Service</h4>
+          <p>Book a mechanic anytime, anywhere, and get back on the road quickly.</p>
+        </div>
+        <div class="service-content-yellow service">
+          <h4>On-Demand Service</h4>
+          <p>Book a mechanic anytime, anywhere, and get back on the road quickly.</p>
+        </div>
+        <div class="service-content  service" id="box-two">
+          <h4>On-Demand Service</h4>
+          <p>Book a mechanic anytime, anywhere, and get back on the road quickly.</p>
+        </div>
+      </div>
+      <div class="whoweare">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="allh4yellow-text">WHO WE ARE?</h4>
+            <h2>Car Detailing And Repair <br> Services ou Can Rely On</h2>
+            <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur reprehenderit
+              sed eligendi esse in
+              est consequuntur aliquid, alias quaerat inventore tempore, autem reiciendis vero quasi impedit? Suscipit,
+              eum mollitia.</p>
+            <div class="d-flex client--stast">
+              <p>Client Satisfaction</p>
+              <p>90%</p>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 90%; background-color: #febd1a;"></div>
+            </div>
+            <div class=" best--service mt-4 d-flex">
+              <div class=" best--service--tiny professional d-flex">
+                <i class="fa-solid fa-user-tie" style="color: #ffffff;"></i>
+                <p>Professional &<br>Creative Staffs</p>
+              </div>
+              <div class=" best--service--tiny warrent--gurant d-flex">
+                <i class="fa-solid fa-award" style="color: #ffffff;"></i>
+                <p>Warrantees &<br>Gurantees</p>
+              </div>
+            </div>
+            <div class="d-flex gap-5 mt-2">
+              <button class="yellow-btn">READ MORE</button>
+              <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i>+1907575778</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" class="d-flex flex-wrap">
+              <img src="image1.png" alt="">
+
+              <div class="form--container">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Your name here">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Your email here">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" class="form-control" cols="10" rows="5"></textarea>
+                <button class="yellow-btn "><i class="fa-regular fa-paper-plane me-2"></i>REQUEST A SERVICE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- our services -->
+    <section class="our-services-container">
+      <div class="our-services  pt-5 ">
+        <h4 class="allh4yellow-text  mt-5">OUR SERVICES</h4>
+        <h2 class="ms-5 mt-5">Delivering <span class="yellow-text">Superior</span> Car Detailing & Repair <span
+            class="yellow-text">Solutions</span></h2>
+        <p class="grey-text width-50 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sed non
+          adipisci nobis dignissimos repudiandae fuga sapiente dolorem aut recusandae nihil officiis asperiores aperiam
+          tempore perspiciatis ullam, sunt provident animi.</p>
+        <div class="our-services-card">
+          <div class="card" style="width: 19rem;">
+            <img
+              src="https://img.freepik.com/free-photo/auto-mechanic-checking-car_1303-14034.jpg?size=626&ext=jpg&uid=R112359055&ga=GA1.1.1155168068.1704123842&semt=ais_hybrid"
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Exterior Detailing</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 19rem;">
+            <img
+              src="https://media.istockphoto.com/id/1175888628/photo/woman-repairing-a-car-in-auto-repair-shop.jpg?s=612x612&w=0&k=20&c=nAR4nGKji8YAlaoRCxWIrmJvSd1-qDEW2ZYTGWvkG0M="
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-screwdriver"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Interoir Detailing</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 19rem;">
+            <img
+              src="https://media.istockphoto.com/id/1387759698/photo/hand-of-car-mechanic-with-wrench-auto-repair-garage-mechanic-works-on-the-engine-of-the-car.jpg?s=612x612&w=0&k=20&c=JVYyKMvP-NN-bTMyIF-pNrifwvjyjKcIRjTVEmSmPsM="
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Paint Correction</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 19rem;">
+            <img
+              src="https://media.gettyimages.com/id/522394158/photo/car-service-procedure.jpg?s=612x612&w=gi&k=20&c=PGLpIJbn31H97zYkGRgOLa1ng894EZXJt0M4Vveh0j4="
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-toolbox"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Engine Diagnastic & Repair</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 19rem;">
+            <img
+              src="https://cdn.customcompleteautomotive.com/images/blog/2021/august/08-11-21/4-benefits-of-hiring-a-professional-certified-mechanic.jpeg"
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-car-battery"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Electrical System Repair</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 19rem;">
+            <img src="https://t3.ftcdn.net/jpg/02/21/15/66/360_F_221156690_99gkyGUSALA4bFV1Zg1joIOO5927q90q.jpg"
+              class="card-img-top" alt="...">
+            <div class="yellow-card">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Suspension & Break Service</h5>
+              <p class="card-text grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+                doloremque </p>
+              <a href="#" class="yellow-text">READ MORE <i class="fa-solid fa-arrow-right"
+                  style="color: #febd1a;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- emergency section -->
+    <section class="emeregency-service pb-5">
+      <div class="emergency-contact d-flex">
+        <div class="emergency-content me-5">
+          <h2>Any Emergency Help? Call Us</h2>
+          <h1 class="yellow-text text-center">+1234-5678</h1>
+        </div>
+        <div class="project-completed  d-flex">
+          <div class="project-done pt-4">
+            <h3 class="count">250+</h3>
+            <p>PROJECT COMPLETED</p>
+          </div>
+          <div class="project-done pt-4">
+            <h3 class="count">1.2K</h3>
+            <p>HAPPY CLIENT</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- why to choose -->
+    <section class="container-fluid whychooseus">
+      <div class="container p-3">
+        <div class="row pt-5">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="https://img.freepik.com/free-photo/male-mechanic-working-shop-car_23-2150170044.jpg" alt=""
+              height="" class="chooseusimg">
+
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 pt-5">
+            <h4 class="yellow-text">Why Choose Us</h4>
+            <h2>Unleash The Sparkle,Car <br>Detailing and Repair Excellence</h2>
+            <p class="grey-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus minus
+              cupiditate dicta dolores deserunt quibusdam !</p>
+            <div class="characteristics mt-5">
+              <div class="character-one d-flex">
+                <i class="fa-solid charcter-icon fa-up-right-and-down-left-from-center" style="color: #fedb1a;"></i>
+                <div class="charcter-content">
+                  <h6>Expertise & Expeience</h6>
+                  <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates ipsam
+                    recusandae maxime expedita dolores consectetur adipisicing elit.</p>
+                </div>
+
+              </div>
+              <div class="character-one d-flex">
+                <i class="fa-solid charcter-icon fa-wand-sparkles" style="color: #fedb1a;"></i>
+                <div class="charcter-content">
+                  <h6>Attention To Detail</h6>
+                  <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates ipsam
+                    recusandae maxime expedita dolores consectetur adipisicing elit.</p>
+                </div>
+
+              </div>
+              <div class="character-one d-flex">
+                <i class="fa-solid charcter-icon fa-handshake" style="color: #fedb1a;"></i>
+                <div class="charcter-content">
+                  <h6>Customer Satisfaction</h6>
+                  <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates ipsam
+                    recusandae maxime expedita dolores consectetur adipisicing elit.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- testimony -->
+    <section>
+      <div class="testimony pb-5">
+        <h4 class="yellow-text text-center">TESTIMONIAL</h4>
+        <h2 class="text-center">What They Say <span class="yellow-text">About Us?</span></h2>
+        <div class="container-testimonal cards card-one mt-5">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore, molestias excepturi quam
+                pariatur quas, debitis possimus maxime id quia ullam facere, dignissimos repudiandae libero eius animi.
+                Quos, ullam officia?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et hic animi eius cum natus necessitatibus
+                earum rerum ipsum in itaque recusandae quos molestiae, laboriosam fuga ducimus excepturi modi assumenda
+                reiciendis!
+              </p>
+              <div class="customer d-flex gap-2">
+                <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                  alt="">
+                <div class="">
+                  <h6 class="customer-name">John Doe</h6>
+                  <p>Destination</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-image">
+              <img src="https://img.freepik.com/premium-photo/men-his-car-summer-road-trip_1426-4564.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="container-testimonal cards card-two mt-5">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore, molestias excepturi quam
+                pariatur quas, debitis possimus maxime id quia ullam facere, dignissimos repudiandae libero eius animi.
+                Quos, ullam officia?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et hic animi eius cum natus necessitatibus
+                earum rerum ipsum in itaque recusandae quos molestiae, laboriosam fuga ducimus excepturi modi assumenda
+                reiciendis!
+              </p>
+              <div class="customer d-flex gap-2">
+                <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                  alt="">
+                <div class="">
+                  <h6 class="customer-name">John Doe</h6>
+                  <p>Destination</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-image">
+              <img
+                src="https://img.freepik.com/free-photo/handsome-smiling-man-jeans-jacket-sunglasses-sitting-his-car-with-opened-doors-river-s-side_155003-32273.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725408000&semt=ais_hybrid"
+                alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container-testimonal cards card-three mt-5">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore, molestias excepturi quam
+                pariatur quas, debitis possimus maxime id quia ullam facere, dignissimos repudiandae libero eius animi.
+                Quos, ullam officia?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et hic animi eius cum natus necessitatibus
+                earum rerum ipsum in itaque recusandae quos molestiae, laboriosam fuga ducimus excepturi modi assumenda
+                reiciendis!
+              </p>
+              <div class="customer d-flex gap-2">
+                <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                  alt="">
+                <div class="">
+                  <h6 class="customer-name">John Doe</h6>
+                  <p>Destination</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 testimony-image">
+              <img src="https://img.freepik.com/premium-photo/men-his-car-summer-road-trip_1426-4564.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow-icon">
+          <i class="fa-solid fa-circle-arrow-left " style="color: #fedb1a;"></i>
+          <i class="fa-solid fa-circle-arrow-right" style="color: #fedb1a;"></i>
+        </div>
+
+
+
+
+      </div>
+      <!-- faq -->
+    </section>
+    <section class="faq">
+      <div class="container">
+        <div class="row pb-5 pt-3 mb-5 ">
+          <div class="col-lg-6 mt-5 col-md-12">
+            <h5 class="yellow-text">FREQUENTLY ASKED QUESTIONS</h5>
+            <h2 class="text-white fs-1">Here Our Most Questions</h2>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officiis quam quasi
+              dignissimos aperiam ratione corporis officia quidem aut totam dolorem, facere eligendi ad voluptatum odio
+              iusto! Ab, praesentium expedita.</p>
+            <button class="yellow-btn">ASK US ANYTHING</button>
+          </div>
+          <div class="col _free pt-2 mb-3">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How do I inflate my tires?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> If your tire pressure is too low, inflate it to the correct pressure. If
+                    your tire pressure is too high, you can release pressure by pressing your fingers on the dot on the
+                    back of the tire valve.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How much do basic services cost?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                    voluptates quod tempore fuga at alias. Minima laborum aliquam hic optio est, officiis id expedita ea
+                    officia inventore quisquam ducimus dolor?</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Where can I find a service schedule?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque magnam
+                    suscipit necessitatibus veniam, aut id libero rem delectus doloremque voluptas facere soluta ipsa
+                    dolor laboriosam beatae, molestiae enim consectetur sunt?</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                    How often should I service my car?
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus
+                    autem laboriosam obcaecati deleniti neque et ipsam! Consequatur unde dicta at perspiciatis?
+                    Voluptates cum similique necessitatibus non quasi soluta. Sunt?</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    How often should I change my oil? You should change your oil at least once a year?
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure quisquam
+                    optio, explicabo obcaecati dolores est atque molestias nisi hic, illo officia consectetur rerum
+                    porro? Veritatis in dolore voluptatibus aliquam?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid offer">
+        <div class="offer-box">
+          <h2>Use Our Services& <span class="yellow-text">Get 25% Cut Off</span> For Every Service Until <span
+              class="yellow-text">August</span></h2>
+          <button class="yellow-btn mt-3">MAKE AN APPOINTMENT</button>
+        </div>
+      </div>
+    </section>
+    <!-- contact form -->
+    <section class="contact-form">
+      <div class="row container">
+        <div class="col-lg-6 me-5  form-first-container">
+          <form class="pb-5">
+            <div class="form-letstalk ">
+              <h5 class="yellow-text">Have Anything To Ask? Let's Talk</h5>
+              <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et facilis
+                commodi odit numquam at! adipisicing elit. Architecto </p>
+              <div class="form-elements">
+                <div class="name-element ">
+                  <div class="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name here">
+                  </div>
+                  <div class="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name here">
+                  </div>
+
+                </div>
+                <div class="email-element">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="Your email here">
+                </div>
+                <div class="message-element">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" class="form-control" cols="10" rows="5"></textarea>
+                </div>
+
+                <button class="yellow-btn "><i class="fa-regular fa-paper-plane me-2"></i>REQUEST A SERVICE</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <div class="col text-white">
+          <h4 class="yellow-text">CONTACT US</h4>
+          <h2>Get In Touch</h2>
+          <p class="grey-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem laboriosam
+            repellendus, provident iste et officia libero sapiente voluptate tempor</p>
+          <div class="address-info ms-2 row">
+            <div class="col">
+              <h6 class="yellow-text">Our Address</h6>
+              <p><i class="fa-solid fa-location-dot" style="color: #FFD43B;"></i>
+                99 Roving St,Big City,Pk-220</p>
+              <p> <i class="fa-solid fa-envelope" style="color: #FFD43B;"></i>
+                Fixmyride@gmail.com</p>
+            </div>
+            <div class="col-lg-6  text-white">
+              <h6 class="yellow-text">Our Address</h6>
+              <p> <i class="fa-solid fa-phone" style="color: #FFD43B;"></i>
+                +91 987478787</p>
+              <div class="social-link">
+                <i class="fa-brands fa-square-twitter fs-3 me-2" style="color: #FFD43B;"></i>
+                <i class="fa-brands fa-square-youtube fs-3 me-2" style="color: #FFD43B;"></i>
+                <i class="fa-brands fa-square-instagram fs-3 me-2" style="color: #FFD43B;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06234744604!2d-74.30933225822731!3d40.69701927339557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1726047419175!5m2!1sen!2sin"
+               style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog container -->
+    <section class="blog-container pb-5">
+      <div class="container blog-holder d-flex">
+        <div class="blog-card mt-5">
+          <h5 class="yellow-text">BLOG</h5>
+          <h2>Read Our <span class="yellow-text">Newest</span> Blog & Article</h2>
+          <p class="grey-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iusto aut tempora, quidem
+            ipsa reiciendis
+          </p>
+          <button class="yellow-btn">ALL BLOG <i class="fa-solid fa-arrow-right"
+              style="color: rgb(206, 205, 205);"></i></button>
+        </div>
+        <div class="blog-card-one mt-5">
+          <img
+            src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU="
+            alt="">
+          <h5 class="mt-2">Electrical Mysterious Unraveled,Common Car Electrical Issues And How To Address Them</h5>
+          <div class="posted-date d-flex justify-content-between">
+            <div class="">
+              <p class="grey-text"><i class="fa-solid fa-calendar" style="color: #7d8893;"></i> &nbsp; July 4, 2023 </p>
+            </div>
+            <div class="">
+              <p class="grey-text"> <i class="fa-regular fa-comment" style="color: #7d8893;"></i> &nbsp; 0</p>
+            </div>
+
+          </div>
+          <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum in cupiditate </p>
+        </div>
+
+        <div class="blog-card-one mt-5">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgPO5Kuljwd92GroaigJ91-31CZ1pqS7d8A&s"
+            alt="">
+          <h5 class="mt-2">Electrical Mysterious Unraveled,Common Car Electrical Issues And How To Address Them</h5>
+          <div class="posted-date d-flex justify-content-between">
+            <div class="">
+              <p class="grey-text"><i class="fa-solid fa-calendar" style="color: #7d8893;"></i> &nbsp; July 4, 2023 </p>
+            </div>
+            <div class="">
+              <p class="grey-text"> <i class="fa-regular fa-comment" style="color: #7d8893;"></i> &nbsp; 0</p>
+            </div>
+
+          </div>
+          <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum in cupiditate </p>
+        </div>
+
+        
+      </div>
+    </section>
+  </main>
+<footer>
+  <!-- footer content -->
+  <section class="footer-container">
+    <div class="container p-5 text-white">
+      <div class="row">
+        <div class="col mb-3">
+          <a class="navbar-brand text-white fw-bold fs-3" href="#">
+            <i class="fa-solid fa-taxi d-inline-block align-text-top mt-2" style="color: #fedb1a;" width="30"
+              height="24"></i>
+            FixMyRide
+          </a>
+          <p class="grey-text mt-2">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quod nulla, odio perspiciatis </p>
+          <div class="social-link mt-4">
+            <i class="fa-brands fa-square-twitter fs-3 me-2" style="color: #FFD43B;"></i>
+            <i class="fa-brands fa-square-youtube fs-3 me-2" style="color: #FFD43B;"></i>
+            <i class="fa-brands fa-square-instagram fs-3 me-2" style="color: #FFD43B;"></i>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <h5 class="fw-bold">Services</h5>
+         <ul class="services-footer">
+          <li>Exterior Detailing</li>
+          <li>Interior Detailing</li>
+          <li>Paintless Dent Repair</li>
+          <li>Headlight Restoration</li>
+          <li>Suspension & Brake Services</li>
+          <li>Paintless Dent Repair</li>
+
+         </ul>
+        </div>
+        <div class="col mb-3">
+          <h5 class="fw-bold">Services</h5>
+        <p class="grey-text"> <i class="fa-solid fa-envelope" style="color: #FFD43B;"></i>
+                Fixmyride@gmail.com</p>
+                <p class="grey-text"> <i class="fa-solid fa-phone" style="color: #FFD43B;"></i>
+                  +91 987478787</p>
+                  <p class="grey-text"><i class="fa-solid fa-location-dot" style="color: #FFD43B;"></i>
+                    99 Roving St,Big City,Pk-220</p>
+                    <p class="fw-bold">Work Hours:</p>
+                    <span class="grey-text">Mon-Sat: 8am - 6pm</span> <br>
+                    <span class="grey-text">Sun: 8am - 3pm</span>
+
+        </div>
+        <div class="col mb-3">
+          <h5 class="fw-bold">Subscribe Our Blog & Article</h5>
+          <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sunt</p>
+          <input type="text"
+          placeholder="your Email here" class="form-control"/>
+          <button class="yellow-btn">SUBSCRIBE NOW</button>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+  <section class="copyright">
+    <div class="container d-flex">
+      <div class="">
+
+      <p class="grey-text">Copyright 2024 &copy; All Rights Reserved</p>
+</div>
+<div class="">
+  <p class="grey-text">Term of use: Privacy Policy : Support</p>
+</div>
+    </div>
+  </section>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1e0f6f9635.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
 </body>
 
 </html>
